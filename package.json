@@ -1,0 +1,27 @@
+{
+  "name": "blockchaininfoPasswdToolkit",
+  "version": "0.9.0",
+  "description": "Tool for test password on blockchain.info wallets",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/koalalab/blockchaininfoPasswdToolkit"
+  },
+  "main": "app.js",
+   "keywords": [
+    "blockckain.info",
+    "password",
+    "recovery",
+    "tool",
+    "bruteforce",
+    "bitcoin",
+    "offline"
+  ],
+  "author": "koalalab",
+  "dependencies": {
+    "prompt": "*"
+   }
+
+}
