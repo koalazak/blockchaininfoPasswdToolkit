@@ -17,8 +17,8 @@ $ npm install
 
 ### Run
 
-1) Search your identifier payload here: https://blockchain.info/wallet/[[your_identifier]]?format=json
-2) Edit app.js to put your password and payload and then:
+- Search your identifier payload here: https://blockchain.info/wallet/[[your_identifier]]?format=json
+- Edit app.js to put your password and payload and then:
 
 ```sh
 $ node app.js
