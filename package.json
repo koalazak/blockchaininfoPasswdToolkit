@@ -1,7 +1,7 @@
 {
   "name": "blockchaininfoPasswdToolkit",
   "version": "0.9.0",
-  "description": "Tool for test password on blockchain.info wallets",
+  "description": "Tool for test passwords on blockchain.info wallet",
   "scripts": {
     "start": "node app.js"
   },
