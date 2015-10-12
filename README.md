@@ -4,7 +4,7 @@ A script to off-line test passwords in a blockchain.info wallet.
 If you forgot your password, with this script you can try and re-try passwords, indefinitely.
 In the near future, the script will bruteforce passwords.
 
-## TODO
+### TODO
   - ~~Get identifier's payload via API~~
   - ~~Load payload from a file~~
   - Bruteforce mode
