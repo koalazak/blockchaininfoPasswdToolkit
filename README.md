@@ -18,6 +18,12 @@ $ cd blockchaininfoPasswdToolkit
 $ npm install
 ```
 
+### Run
+
+```sh
+$ node app.js
+```
+
 ### Usage
 
 ```sh
