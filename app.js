@@ -4,9 +4,8 @@ var check_password=require("./lib/cryptomagic.js");
 
 var iterations=0; // default set to 0 for older identifiers (this test with 1 to 20 and 5000 pbkdf2/iso7816 iterations).
 
-
 program
-  .version('0.9.1')
+  .version('1.0.0')
   .description('A tool for test passwords on a blockchain.info wallet')
   .usage('(-p <file ...> | -i <identifier>) [options]')
   .option('-p, --payload <file ...>', 'read payload from a file')
@@ -25,7 +24,6 @@ program
   console.log('');
   });
   program.parse(process.argv);
-
 
 
 if(typeof program.payload === "undefined" && typeof program.identifier === "undefined"){
@@ -83,7 +81,7 @@ if(typeof program.payload != "undefined"){
 		    
 		    if("payload" in payloadData){
 			    
-			    //TODO: Check authType?
+			    //Check authType?
 			    
 			    try{
 			    
@@ -147,12 +145,32 @@ function startCrack(payload, iterations){
 	
 	if(typeof program.dictionary != "undefined"){
 	
-		//dictionary mode
-		console.log("TODO");
-		process.exit();
+		if(require("fs").existsSync(program.dictionary)){
+			
+			var rl = require('readline').createInterface({
+			  input: require('fs').createReadStream(program.dictionary)
+			});
+			
+			rl.on('line', function (line) {
+			  	console.log("Checking '"+line+"'");
+			  	if(check_password(payload, line, iterations)) {
+					console.log("=======================");
+				    console.log("Password found: "+line);
+				    console.log("=======================");
+				}
+			  
+			});
+			
+			rl.on('close', function() {
+			  console.log("Password not found.");
+			  process.exit();
+			});
+			
+		}else{
+			showError("Dictionary file not found.");
+		}
 	
 	}else{
-		
 		
 		prompt.message = "";
 		prompt.delimiter = "";

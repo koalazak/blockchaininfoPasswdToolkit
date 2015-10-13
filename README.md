@@ -2,13 +2,8 @@
 
 A script to off-line test passwords in a blockchain.info wallet.
 If you forgot your password, with this script you can try and re-try passwords, indefinitely.
-In the near future, the script will bruteforce passwords.
+And even better, you can bruteforce passwords using a dictionary file.
 
-### TODO
-  - ~~Get identifier's payload via API~~
-  - ~~Load payload from a file~~
-  - Bruteforce mode
-  - ~~Infinite re-try mode~~
 
 ### Installation
 
@@ -46,12 +41,23 @@ $ node app.js
     $ app -p mypayload.txt
     $ app -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6"
     $ app -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6" -d words.txt
+    $ app -i pepito -d words.txt
     $ app -p mypayload.txt -n 5000
     $ app -p mypayload.txt -n 5000 -d wordlist.txt
 
 ```
 
+### TODO
+  - ~~Get identifier's payload via API~~
+  - ~~Load payload from a file~~
+  - ~~Bruteforce mode~~
+  - ~~Infinite re-try mode~~
+  
+
 ### License
 
 MIT
 
+### Author
+
+- [koalazak](https://github.com/koalazak) 
