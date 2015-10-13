@@ -23,7 +23,7 @@ $ node app.js
 
 ```sh
 
-  Usage: app (-p <file ...> | -i <identifier>) [options]
+  Usage: node app.js (-p <file ...> | -i <identifier>) [options]
 
   A tool for test passwords on a blockchain.info wallet
 
@@ -38,12 +38,12 @@ $ node app.js
 
   Examples:
 
-    $ app -p mypayload.txt
-    $ app -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6"
-    $ app -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6" -d words.txt
-    $ app -i pepito -d words.txt
-    $ app -p mypayload.txt -n 5000
-    $ app -p mypayload.txt -n 5000 -d wordlist.txt
+    $ node app.js -p mypayload.txt
+    $ node app.js -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6"
+    $ node app.js -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6" -d words.txt
+    $ node app.js -i pepito -d words.txt
+    $ node app.js -p mypayload.txt -n 5000
+    $ node app.js -p mypayload.txt -n 5000 -d wordlist.txt
 
 ```
 
@@ -60,4 +60,4 @@ MIT
 
 ### Author
 
-- [koalazak](https://github.com/koalazak) 
+- [zak](https://github.com/koalazak) 

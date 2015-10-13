@@ -16,11 +16,11 @@ program
   program.on('--help', function(){
   console.log('  Examples:');
   console.log('');
-  console.log('    $ app -p mypayload.txt');
-  console.log('    $ app -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6"');
-  console.log('    $ app -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6" -d words.txt');
-  console.log('    $ app -p mypayload.txt -n 5000');
-  console.log('    $ app -p mypayload.txt -n 5000 -d wordlist.txt');
+  console.log('    $ node app.js -p mypayload.txt');
+  console.log('    $ node app.js -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6"');
+  console.log('    $ node app.js -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6" -d words.txt');
+  console.log('    $ node app.js -p mypayload.txt -n 5000');
+  console.log('    $ node app.js -p mypayload.txt -n 5000 -d wordlist.txt');
   console.log('');
   });
   program.parse(process.argv);
