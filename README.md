@@ -8,7 +8,7 @@ And even better, you can bruteforce passwords using a dictionary file.
 
   - Node >= 0.12
   - Your identifier/alias OR your encrypted wallet payload string in base64
-  - if you think use the bruteforce option, you need a dictionary file in UTF-8 format
+  - If you want to use the bruteforce option, you need a dictionary file in UTF-8 format
   - **You don't need a backup file**
 
 
