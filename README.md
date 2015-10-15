@@ -54,6 +54,17 @@ $ node app.js
 
 ```
 
+### About speed and pbkdf2 iterations
+
+A lo largo del tiempo, blockchain.info usó un numero diferente de interaciones pbkdf2 para encriptar los wallets.
+Al principio usaba 1 iteracion, luego 10, luego 20 y ahora 5000. Y este dato no es informado para los identifiers más viejos cuando se consulta un payload via API.
+Es por eso que esta herramienta intenta desecriptar el payload utilizando todas estas posiblidades de iteraciones anteriores.
+Solo en las nuevas accounts, la API nos especifica con cuantas iteraciones fue encriptado el payload.
+Entonces, si conoces el numero de iteraciones exacto con que fue encriptado tu payload, es mejor que lo especifiques con el parametro -i para evitar que el script intente con las opciones viejas(1,10,20,5000).
+Si especificas el identifier y este es de los nuevos, el script usará el numero exacto de interaciones que diga la API de blockchain.info.
+Resumiento: para incrementar la velocidad del script, especifica el numero de iteraciones exacto con el aprametro -i
+
+
 ### TODO
   - ~~Get identifier's payload via API~~
   - ~~Load payload from a file~~
