@@ -59,9 +59,9 @@ $ node app.js
 Throughout time, blockchain.info used a different number of pbkdf2 iterations to encrypt the wallets.
 They started with just 1; then came 10, 20 and it is now 5000. That number however, is not provided for older identifiers, whenever you query a payload via API. 
 This is why this tool uses all of these possibilities to try and decrypt the payload.
-New accounts on the other hand, do specify the number of iterations used in the wallet json. Therefore, if you know the exact number of iterations used to encrypt your payload, it is best to use the -i parameter with the correct number, to prevent the script from trying out all possibilities.
+New accounts on the other hand, do specify the number of iterations used in the wallet json. Therefore, if you know the exact number of iterations used to encrypt your payload, it is best to use the -n parameter with the correct number, to prevent the script from trying out all possibilities.
 When you specify an identifier and it is one of the newer ones, the script will use the exact number of iterations as indicated by the API.
-To recap: using the -i parameter to indicate the exact number of iterations will ensure it runs as fast as possible.
+To recap: using the -n parameter to indicate the exact number of iterations will ensure it runs as fast as possible.
 
 
 ### TODO
