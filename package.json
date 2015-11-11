@@ -1,16 +1,16 @@
 {
-  "name": "blockchaininfoPasswdToolkit",
-  "version": "1.0.0",
+  "name": "bciptk",
+  "version": "1.0.4",
   "description": "Tool for bruteforce passwords on blockchain.info wallet",
-  "scripts": {
-    "start": "node app.js"
+  "bin": {
+  	"bciptk": "app.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/koalalab/blockchaininfoPasswdToolkit"
+    "url": "https://github.com/koalazak/blockchaininfoPasswdToolkit.git"
   },
   "main": "app.js",
-   "keywords": [
+  "keywords": [
     "blockckain.info",
     "password",
     "recovery",
@@ -19,11 +19,15 @@
     "bitcoin",
     "offline"
   ],
-  "author": "koalalab",
+  "author": "koalazak <zak.tux@gmail.com>",
   "dependencies": {
     "prompt": "*",
     "commander": "*",
     "request": "*"
-   }
+   },
+  "bugs": {
+    "url": "https://github.com/koalazak/blockchaininfoPasswdToolkit/issues"
+  },
+  "homepage": "https://github.com/koalazak/blockchaininfoPasswdToolkit"
 
 }

@@ -1,4 +1,6 @@
 # blockchain.info recovery password toolkit
+[![npm version](https://badge.fury.io/js/bciptk.svg)](http://badge.fury.io/js/bciptk)
+[![npm dependency status](https://david-dm.org/koalazak/blockchaininfoPasswdToolkit.png)](https://david-dm.org/koalazak/blockchaininfoPasswdToolkit)
 
 A script to off-line test passwords in a blockchain.info wallet.
 If you forgot your password, with this script you can try and re-try passwords, indefinitely.
@@ -13,24 +15,23 @@ And even better, you can bruteforce passwords using a dictionary file.
 
 
 ### Installation
+Install as global:
 
 ```sh
-$ git clone [git-repo-url] blockchaininfoPasswdToolkit
-$ cd blockchaininfoPasswdToolkit
-$ npm install
+$ npm install bciptk -g
 ```
 
 ### Run
 
 ```sh
-$ node app.js
+$ bciptk --help
 ```
 
 ### Usage
 
 ```sh
 
-  Usage: node app.js (-p <file ...> | -i <identifier>) [options]
+  Usage: bciptk (-p <file ...> | -i <identifier>) [options]
 
   A tool for test passwords on a blockchain.info wallet
 
@@ -45,12 +46,12 @@ $ node app.js
 
   Examples:
 
-    $ node app.js -p mypayload.txt
-    $ node app.js -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6"
-    $ node app.js -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6" -d words.txt
-    $ node app.js -i pepito -d words.txt
-    $ node app.js -p mypayload.txt -n 5000
-    $ node app.js -p mypayload.txt -n 5000 -d wordlist.txt
+    $ bciptk -p mypayload.txt
+    $ bciptk -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6"
+    $ bciptk -i "8ea09594-830c-4681-9d9e-6fe4fe7d8be6" -d words.txt
+    $ bciptk -i pepito -d words.txt
+    $ bciptk -p mypayload.txt -n 5000
+    $ bciptk -p mypayload.txt -n 5000 -d wordlist.txt
 
 ```
 
@@ -64,20 +65,20 @@ When you specify an identifier and it is one of the newer ones, the script will 
 To recap: using the -n parameter to indicate the exact number of iterations will ensure it runs as fast as possible.
 
 
-### TODO
-  - ~~Get identifier's payload via API~~
-  - ~~Load payload from a file~~
-  - ~~Bruteforce mode~~
-  - ~~Infinite re-try mode~~
+### Changelog
+  - Get identifier's payload via API
+  - Load payload from a file
+  - Bruteforce mode
+  - Infinite re-try mode
   
 
 ### Lectures and more info
 
-  - https://blockchain.info/wallet/wallet-format
-  - https://blockchain.info/wallet/technical-faq
-  - https://blockchain.info/wallet/wallet-faq
-  - https://github.com/blockchain/My-Wallet
-  - https://blockchain.info/wallet/security
+  - [https://blockchain.info/wallet/wallet-format](https://blockchain.info/wallet/wallet-format)
+  - [https://blockchain.info/wallet/technical-faq](https://blockchain.info/wallet/technical-faq)
+  - [https://blockchain.info/wallet/wallet-faq](https://blockchain.info/wallet/wallet-faq)
+  - [https://github.com/blockchain/My-Wallet](https://github.com/blockchain/My-Wallet)
+  - [https://blockchain.info/wallet/security](https://blockchain.info/wallet/security)
 
 ### License
 
