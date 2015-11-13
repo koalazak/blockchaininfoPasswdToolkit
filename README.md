@@ -18,7 +18,7 @@ And even better, you can bruteforce passwords using a dictionary file.
 Install as global:
 
 ```sh
-$ npm install bciptk -g
+$ sudo npm install bciptk -g
 ```
 
 ### Run
