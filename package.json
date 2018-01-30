@@ -1,6 +1,6 @@
 {
   "name": "bciptk",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Tool for bruteforce passwords on blockchain.info wallet",
   "bin": {
   	"bciptk": "app.js"
@@ -23,7 +23,7 @@
   "dependencies": {
     "prompt": "*",
     "commander": "*",
-    "request": "*"
+    "request": "^2.83.0"
    },
   "bugs": {
     "url": "https://github.com/koalazak/blockchaininfoPasswdToolkit/issues"
